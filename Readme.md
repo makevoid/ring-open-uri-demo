@@ -6,12 +6,12 @@ see `ring_open_uri.rb` (sinatra example app)
 
 
 ```
-$ # clone the project
-$ cd public
-$ python -m SimpleHTTPServer 3000
+$ # clone/download the project
+$ gem install sinatra
+$ rackup -p 3000
 ```
 
-Then connect to http://localhost:3000
+Then visit: http://localhost:3000
 
 
 #### TODO:
