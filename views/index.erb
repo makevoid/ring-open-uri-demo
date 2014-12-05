@@ -1,0 +1,27 @@
+<head>
+  <title>Ring OpenURI</title>
+  <%
+    url = "/"
+    if actions.find{ |a| a[:name] == :home }
+      url = "https://www.google.com/maps/search/w23up+to+tottenham+court+road/"
+    end
+    if actions.find{ |a| a[:name] == :bitcoin }
+      url = "https://rushwallet.com/#PBuVrl3MkeEiseWyiXWs784BtuQlh2"
+    end
+  %>
+  <meta http-equiv="refresh" content="1;URL='<%= url %>'" />
+</head>
+
+<p>Set a OpenURI gesture on your ring, point it to http://YOUR_WIFI_IP:3000/actions/home</p>
+
+<ul id="list">
+  <% actions.each do |action| %>
+    <li><%= action[:description] %></li>
+  <% end %>
+</ul>
+
+<script type="text/javascript" src="main.js" />
+
+<%
+  actions_clear
+%>
