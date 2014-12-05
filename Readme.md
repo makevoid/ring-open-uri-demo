@@ -13,6 +13,8 @@ $ rackup -p 3000
 
 Then visit: http://localhost:3000
 
+(after you tested the app on your computer, then open the browser on your phone/tablet)
+
 
 There are two default acttions to see (I focused more on choosing and testing the gestures than the actual implementation):
 
