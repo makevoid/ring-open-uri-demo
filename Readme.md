@@ -36,7 +36,7 @@ There are two default acttions to see (I focused more on choosing and testing th
 
 at the moment, you can configures Actions from here: https://github.com/makevoid/ring_open_uri/blob/master/ring_open_uri.rb#L23
 
-and urls from here: https://github.com/makevoid/ring_open_uri/blob/master/views/index.erb#L5
+and urls from here: https://github.com/makevoid/ring_open_uri/blob/master/views/index.erb#L9
 
 enjoy!
 
