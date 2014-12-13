@@ -2,10 +2,14 @@
   <title>Ring OpenURI</title>
   <%
     url = "/"
-    if actions.find{ |a| a[:name] == :home }
+    find_action = ->(action_name) do
+      actions.find{ |a| a[:name] == action_name }
+    end
+    
+    if find_action[:home]
       url = "https://www.google.com/maps/search/w23up+to+tottenham+court+road/"
     end
-    if actions.find{ |a| a[:name] == :bitcoin }
+    if find_action[:bitcoin]
       url = "https://rushwallet.com/#PBuVrl3MkeEiseWyiXWs784BtuQlh2"
     end
   %>
