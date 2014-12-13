@@ -1,5 +1,7 @@
 # Ring OpenURI
 
+video: http://mkv-video.s3.amazonaws.com/ring/ring_maps_and_b.mov (~5mb)
+
 ### simple example using Ruby
 
 see `ring_open_uri.rb` (sinatra example app)
