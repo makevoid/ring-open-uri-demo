@@ -7,7 +7,7 @@ see `ring_open_uri.rb` (sinatra example app)
 
 ```
 $ # clone/download the project
-$ gem install sinatra
+$ gem install sinatra rack
 $ rackup -p 3000
 ```
 
