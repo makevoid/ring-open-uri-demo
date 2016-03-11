@@ -28,6 +28,14 @@ class RingOpenURI < Sinatra::Base
     @@actions << { name: :bitcoin, description: "Creating a new wallet for you" }
   end
 
+  get "/actions/paypal_buy" do
+    @@actions << { name: :paypal_buy, description: "Create a new paypal wallet" }
+  end
+
+  get "/actions/paypal_accept" do
+    @@actions << { name: :paypal_accept, description: "Accepts a multisig payment" }
+  end
+
   get "/api" do
     content_type :json
     "OK"
