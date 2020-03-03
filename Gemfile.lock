@@ -1,7 +1,10 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    rack (1.6.4)
+    nio4r (2.5.2)
+    puma (4.3.3)
+      nio4r (~> 2.0)
+    rack (1.6.13)
     rack-protection (1.5.3)
       rack
     sinatra (1.4.7)
@@ -14,6 +17,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  puma
   sinatra
 
 BUNDLED WITH
